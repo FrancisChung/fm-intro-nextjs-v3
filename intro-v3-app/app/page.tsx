@@ -8,7 +8,10 @@ const getData = async() => {
 const Home = async () => {
   const data = await getData()
   console.log(data)
-  return <div>HOME</div>
+  return
+  <div>
+    <NewTodoForm />
+  </div>
 }
 
 export default Home
