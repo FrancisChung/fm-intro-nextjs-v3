@@ -1,5 +1,11 @@
 Coursework for https://frontendmasters.com/courses/next-js-v3/
 
+To run the app:
+
+Cd into intro-v3-app.
+npm run dev
+[Note]: Next.js requires Node.js version >= 20.0.0
+
 [![Frontend Masters](https://static.frontendmasters.com/assets/brand/logos/full.png)][fem]
 
 This is a companion repo for the [Introduction to Next.js, v3][course] course on [Frontend Masters][fem]. This application is built from scratch throughout the course. The `main` branch contains a final version of the application similar to the one built in the course. 
