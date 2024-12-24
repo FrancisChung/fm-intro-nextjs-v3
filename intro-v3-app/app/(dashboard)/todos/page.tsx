@@ -1,8 +1,22 @@
+import TodoList from "@/components/TodoList";
+
 console.log("This should not run on the browser")
 console.log(process.argv)
 
-const TodosPage = () => {
-    return <div>todos</div>
+import db from '@/utils/db'
+
+const getData = async () => {
+    const todos = await db.todo .findMany({})
+    return todos
+}
+
+const TodosPage = async() => {
+    const todos = await getData()
+    return (
+        <div>
+            <TodoList todos={todos} />
+        </div>
+    )
 }
 
 export default TodosPage;
